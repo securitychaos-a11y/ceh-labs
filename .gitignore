@@ -1,0 +1,82 @@
+# Ethical Hacking Lab Environment
+# Generated: 2026
+
+# ─── Packet Captures ──────────────────────────────────────────────────────────
+*.pcap
+*.pcapng
+*.cap
+
+# ─── Virtual Machine Exports ──────────────────────────────────────────────────
+*.ova
+*.ovf
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.vmx
+*.vmwarevm/
+
+# ─── Large / Binary Files ─────────────────────────────────────────────────────
+# Wordlists (download separately from SecLists / rockyou)
+*.txt.gz
+rockyou.txt
+SecLists/
+
+# Compiled payloads & shellcode
+*.exe
+*.dll
+*.so
+*.bin
+*.raw
+*.payload
+
+# ─── Screenshots (individual large captures) ──────────────────────────────────
+# Commit small/compressed screenshots only; exclude raw uncompressed PNGs over ~3 MB
+# (use git-lfs or just keep screenshots local)
+# *.png  ← intentionally NOT excluded so small screenshots can be committed
+# Add oversized ones explicitly below if needed
+
+# ─── Credentials, Secrets & Config ───────────────────────────────────────────
+.env
+*.env.*
+secrets.txt
+creds.txt
+credentials.txt
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+config.ini
+local_settings.py
+
+# ─── Lab/Tool Output Files ────────────────────────────────────────────────────
+# Nmap XML/grepable output (can be large; regenerate locally)
+*.gnmap
+*.nmap
+*.xml
+
+# Metasploit resource files with live IPs/payloads
+*.rc
+
+# Hashcat sessions & potfiles (contain cracked hashes — keep local)
+hashcat.potfile
+*.hcstat2
+*.session
+
+# ─── OS & Editor Junk ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# ─── Python / Scripts ─────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
